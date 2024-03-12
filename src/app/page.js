@@ -16,8 +16,8 @@ export default function Home() {
             <MoreVertIcon className="text-red-600" /> QUICK READ
           </h2>
         </div>
-        {Data.map((item) => (
-          <Card title={item.title} desc={item.desc} img={item.img} />
+        {Data.map((item, index) => (
+          <Card key={index} title={item.title} desc={item.desc} img={item.img} />
         ))}
       </div>
       <button className="bg-red-600 text-white px-5 py-3 rounded-full font-normal fixed bottom-[100px] left-1/2 transform -translate-x-1/2">
