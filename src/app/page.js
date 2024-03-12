@@ -17,7 +17,7 @@ export default function Home() {
         <Card />
         <Card />
       </div>
-      <button className="bg-red-600 text-white px-5 py-3 rounded-full font-thin fixed bottom-[100px] left-1/2 transform -translate-x-1/2">
+      <button className="bg-red-600 text-white px-5 py-3 rounded-full font-normal fixed bottom-[100px] left-1/2 transform -translate-x-1/2">
         EXIT QUICK READ
       </button>
     </div>
