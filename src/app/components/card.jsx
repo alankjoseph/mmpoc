@@ -3,11 +3,13 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ShareIcon from "@mui/icons-material/Share";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+
+import Image from "next/image";
 function card({title, desc, img}) {
   return (
     <div className="max-w-sm md:max-w-xl  bg-white border  border-gray-200 rounded-lg shadow-md mb-5 last:mb-[200px]">
       <a href="#">
-        <img className="rounded-t-lg" src={img} alt="" />
+        <img   className="rounded-t-lg" src={img} alt="" />
       </a>
       <div className="p-5">
         <p className="text-sm text-[#333994] font-semibold mb-2">TOP NEWS</p>
