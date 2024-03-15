@@ -1,25 +1,25 @@
-"use client";
-import Image from "next/image";
-import Card from "./components/card";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Data from "./data/data.json";
-import { useEffect } from "react";
+import { Suspense } from "react";
+import CircularProgress from "@mui/material/CircularProgress";
+import QuickRead from "./components/quickRead";
+
 export default function Home() {
-  useEffect(() => {
-    console.log(Data);
-  });
+
   return (
-    <div className="flex flex-col  items-center">
-      <div className="flex flex-col">
-        <div className="flex ">
-          <h2 className="font-extrabold  py-4">
+    <div className="flex flex-col max-w-[440px] my-0 mx-auto ">
+      <div className="flex flex-col ">
+        <div className="flex">
+          <h2 className="font-semibold py-4">
             <MoreVertIcon className="text-red-600" /> QUICK READ
           </h2>
         </div>
-        {Data.map((item, index) => (
-          <Card key={index} title={item.title} desc={item.desc} img={item.img} />
-        ))}
+        <div className="mx-[20px]">
+          <Suspense fallback={<CircularProgress />}>
+            <QuickRead/>
+          </Suspense>
+        </div>
       </div>
+
       <button className="bg-red-600 text-white px-5 py-3 rounded-full font-normal fixed bottom-[100px] left-1/2 transform -translate-x-1/2">
         EXIT QUICK READ
       </button>

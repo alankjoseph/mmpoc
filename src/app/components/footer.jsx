@@ -6,7 +6,7 @@ import PortraitIcon from '@mui/icons-material/Portrait';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 function footer() {
   return (
-    <div className="fixed    bottom-0 w-full h-[70px] bg-[#15173d] rounded-t-lg inline-grid grid-cols-5 justify-around items-center px-5">
+    <div className="fixed bottom-0 w-full h-[70px] bg-[#15173d] rounded-t-lg inline-grid grid-cols-5 justify-around items-center px-5">
       <div className="flex flex-col items-center">
         <HomeIcon className="text-slate-400 text-3xl" />
         <p className="text-gray-400 text-xs  text-center">HOME</p>
