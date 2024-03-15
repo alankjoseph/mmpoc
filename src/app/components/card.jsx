@@ -9,7 +9,7 @@ function card({title, desc, img}) {
     <div className="max-w-sm md:max-w-xl  bg-white border  border-gray-200 rounded-lg shadow-md mb-5 last:mb-[200px]">
       <a href="#">
         <Image className="rounded-t-lg min-h-[166]" width={384} height={166} priority={false} src={img} alt="" />
-        <img   className="rounded-t-lg" src={img} alt="" />
+        {/* <img   className="rounded-t-lg" src={img} alt="" /> */}
       </a>
       <div className="p-5">
         <p className="text-sm text-[#333994] font-semibold mb-2">TOP NEWS</p>
